@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Webdevelopment Winc Academy</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+    <h1>Post your favorite recipe</h1>
+    <form name="recipe-input" method="POST" data-netlify="true">
+        <p>
+            <label>Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+            <label>Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+            <label>Telephone number: <input type="tel" name="phonenumber" /></label>
+        </p>
+        <p>
+            <label>Age: <input type="number" name="age" min="0" max="100" /></label>
+        </p>
+        <p>
+            <label>Date of birth: <input type="date" name="birthday" /></label>
+        </p>
+        <p>
+            <label>Gender:
+                <input type="radio" id="Gender" name="gender" value="MALE">
+                <label for="Male">Male</label>
+                <input type="radio" id="Gender" name="gender" value="Female">
+                <label for="Female">Female</label>
+                <input type="radio" id="Gender" name="gender" value="Other">
+                <label for="Other">Other</label>
+            </label>
+        </p>
+        <p>
+            <label>Favorite Cuisine:
+                <input type="checkbox" id="Cuisine1" name="Cuisine1" value="French">
+                <label for="Cuisine1">French</label>
+                <input type="checkbox" id="Cuisine2" name="Cuisine2" value="Italian">
+                <label for="Cuisine2">Italian</label>
+                <input type="checkbox" id="Cuisine3" name="Cuisine3" value="Spanish">
+                <label for="Cuisine3">Spanish</label>
+                <input type="checkbox" id="Cuisine4" name="Cuisine4" value="Arabic">
+                <label for="Cuisine4">Arabic</label>
+            </label>
+        </p>
+        <p>
+            <label for="favcolor">Select your favorite aproncolor:<input type="color" id="favcolor" name="favcolor"
+                    value="#ff0000">
+            </label>
+        </p>
+        <p>
+            <label>Biography:<br>
+                <textarea name="message" rows="10" cols="30" placeholder="Type in your biography"></textarea>
+            </label>
+        </p>
+        <p>
+            <label for="recipe">Upload your favorite recipe: <br>
+                Select a file: <input type="file" id="myfile" name="myfile"> </label>
+        </p>
+        <p>
+            <label for="webpage">Add an URL to recipe website:</label>
+            <input type="url" name="webpage">
+        </p>
+        <p>
+            <button type="submit" value="Submit">Submit</button>
+            <button type="reset" value="Reset">Reset</button>
+        </p>
+    </form>
+</body>
